@@ -9,7 +9,6 @@ class Player {
 }
 
 void main() {
-  var picco = Player(name: "picco");
   runApp(const App());
 }
 
@@ -125,17 +124,15 @@ class App extends StatelessWidget {
                   height: 20,
                 ),
                 const CurrencyCard(
+                  order: 0,
                   name: "Euro",
                   code: "EUR",
                   amount: "6 428",
                   icon: Icons.euro_rounded,
                   isInverted: false,
-                  xSite: 0,
-                  ySite: 0,
                 ),
                 const CurrencyCard(
-                  xSite: 0,
-                  ySite: -20,
+                  order: 1,
                   name: "Bitcoin",
                   code: "BTC",
                   amount: "9 785",
@@ -143,8 +140,7 @@ class App extends StatelessWidget {
                   isInverted: true,
                 ),
                 const CurrencyCard(
-                  xSite: 0,
-                  ySite: -20,
+                  order: 2,
                   name: "Dollar",
                   code: "USD",
                   amount: "428",
